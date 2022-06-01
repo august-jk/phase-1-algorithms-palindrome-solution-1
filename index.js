@@ -1,9 +1,26 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  return word === reversed(word);
 
+}
+function reversed(word){
+  //make string an array
+  arr = word.split('');
+  //reverse array
+  reversedArr = arr.reverse();
+  //make array a string again
+  reversedWord = reversedArr.join('');
+  //return reversed word
+  return reversedWord;
+}
 /* 
   Add your pseudocode here
+  take string
+  make string into array use .split('')
+  reverse array using .reverse()
+  turn array back into string with .join('')
+  compare 
+  return boolean
 */
 
 /*
